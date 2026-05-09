@@ -62,6 +62,33 @@ The application also displays:
 - Spectrum plot of the original audio.
 - Spectrum plot of the processed audio.
 
+## Sample Output
+
+A typical MATLAB console session looks like this:
+
+```text
+Loaded "voice.wav" — fs=44100, duration=3.21 s
+
+Select effect:
+ 1: Echo
+ 2: Pitch Up (male->female style)
+ 3: Pitch Down
+ 4: Robot
+ 5: Muffled (LPF)
+ 6: Alien (HPF)
+ 7: Male -> Female (combo)
+ 8: Plot Spectrum
+ 9: Exit
+Enter choice number: 1
+Saved: output_echo.wav
+```
+
+When an effect is applied, the app creates these visual outputs:
+
+- **Time-domain comparison**: original signal on top, processed signal below.
+- **Original spectrum**: frequency magnitude of the source audio.
+- **Result spectrum**: frequency magnitude of the processed audio with effect label.
+
 ## Usage Instructions
 
 1. Place the input file `voice.wav` in the project folder.
